@@ -71,13 +71,20 @@ console.log("el perímetro del Círculo mide: " + perimetroCirculo + "cm");
 const areaCirculo = Pi * (radioCirculo * radioCirculo);
 console.log("el área del Círculo mide: " + areaCirculo + "cm^2"); */
 
-function perimetroCirculo(diametro) {
-    return Math.PI * diametro;
+const Pi = Math.PI;
+
+function diametroCirculo(radio) {
+    return radio * 2;
+};
+
+function perimetroCirculo(radio) {
+    const diametro = diametroCirculo(radio);
+    return Pi * diametro;
 }
 perimetroCirculo();
 
 function areaCirculo(radio) {
-    return Math.PI * (radio*radio);
+    return Pi * (radio * radio);
 }
 areaCirculo();
 
