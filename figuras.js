@@ -90,3 +90,31 @@ areaCirculo();
 
 console.groupEnd;
 
+
+
+//INTERACUAMOS CON HTML//
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+
+
+/* function calcularAltura(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base){
+        alert("La altura del Triágulo Isoceles es: " + (Math.sqrt((lado1 * lado1) + (base * base)))+ " cm" )
+    } else {
+        alert("NO ES ISOCELES!!")
+    }
+} */
